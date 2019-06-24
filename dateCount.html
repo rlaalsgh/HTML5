@@ -1,0 +1,27 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+	<title>1번과제</title>
+</head>
+<body>
+	<p><em>1. 자신의 웹 페이지 주제와 관련하여 Date 객체를 이용하여 
+	팀이나 그룹이 오늘 현재 며칠이 되었는지 (혹은 몇년, 몇개월, 며칠 형식) 아니면 내가 그 주제에 관심을 가진지 며칠째 되었는 지 등 
+	Date 객체를 이용하여 출력하는 자바스크립트 HTML을 작성하시오</em><br><br></p>
+	<p>(1) LG트윈스 창단일 <br><br></p>
+	<script type = "text/javascript" >
+		var today = new Date();
+		var y = today.getFullYear();
+		var m = today.getMonth()+1;
+		var d = today.getDate();
+		document.write("현재시각 : "+y+" 년 "+m+" 월 "+d+" 일<br />");
+		var old = new Date(1990,03,25);
+		var oy = old.getFullYear();
+		var om = old.getMonth();
+		var od = old.getDate();
+		var totalDay = (today - old) / (1000 * 60 * 60 * 24)+(y-oy)+d;//만으로 일을 구하는 계산공식
+		document.write("창단일 : "+oy+" 년 "+om+" 월 "+od+" 일<br />");
+		document.write("만으로"+totalDay+" 일이 되었습니다. <br />");
+	</script>
+	
+</body>
+</html>

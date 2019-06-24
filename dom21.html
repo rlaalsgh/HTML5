@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<head>
+	<title>4번과제 Dom Tree</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<p><em><strong>4. 다음 문제(주교재의 실습문제 21번)의 자바스크립트 프로그램을 작성하시오. (dom21.html)
+	다음 요소를 DOM 인터페이스를 통해 접근해서 name 속성값을 알아내 출력하는 자바스크립트 코드를 작성하시오.<br><br></strong></em></p>
+	<form ="">
+		Class : <input id="dept" type="text" name="department" value="computer science" />
+	</form>
+	<script type = "text/javascript">
+		var dom = document.getElementById("dept");
+		alert(dom.name)
+		document.write("<br /><br />name의 값 = "+dom.name);
+	</script>
+</body>
+</html>

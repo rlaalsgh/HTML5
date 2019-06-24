@@ -1,0 +1,83 @@
+﻿<!DOCTYPE>
+<HTML>
+<HEAD>
+	<TITTLE>실습 과제</TITTLE>
+</HEAD>
+<BODY>
+	<P><EM>1. 자신의 이름을 20번 출력하는 자바스크립트 프로그램을 while문과 for문, do-while문을 써서 각각 작성하시오. 단, 한 줄에 4번찍고 줄바꿈을 한다.
+	즉, 4개씩 5줄 출력. (1개 파일에 작성)</EM></P>
+	<SCRIPT TYPE = "TEXT/JAVASCRIPT" >
+	var a = "김민호";
+	document.write("<br />"+"(1) for문으로 이름나타내기"+"<br />"+"<br />")
+	for(i=1;i<21;i++)
+	{
+		document.write(a+"	");
+		if(i%4==0)
+		{
+			document.write("<br />");
+		}
+	}
+	i=1;
+	document.write("<br />"+"(2) while 문으로 이름나타내기"+"<br />"+"<br />");
+	while(i<21)
+	{
+		document.write(a+"	");
+		if(i%4 == 0)
+		{
+			document.write("<br />");
+		}
+		i++;
+	}
+	i=1;
+	document.write("<br />"+"(3) do-while 문으로 이름나타내기"+"<br />"+"<br />");
+	do{
+		document.write(a+"	");
+		if(i%4 == 0)
+		{
+			document.write("<br />");
+		}
+		i++;
+	}while(i<21);
+	</SCRIPT>
+	
+	<p><em>2. 위 1번 문제를 몇 번 출력할지	횟수를 물어보는 문제로 바꾸어 각각 작성하시오. 
+	따라서, 8이 입력되면 4개씩 2줄로 출력. (1개 파일에 작성)</em></p>
+	<script type = "text/javascript">
+	var n = prompt("이름을 몇 번 출력할지 입력하라");
+	var a = "김민호";
+	document.write("<br />"+"<br />"+"(1) for문으로 이름나타내기"+"<br />"+"<br />");
+	for(i=1;i <= n;i++)
+	{
+		document.write(a+"	");
+		if(i%4==0)
+		{
+			document.write("<br />");
+		}
+	}
+	i=1;
+	document.write("<br />"+"<br />"+"(2) while 문으로 이름나타내기"+"<br />"+"<br />");
+	while(i <= n)
+	{	
+		document.write(a+"	");
+		if(i%4 == 0)
+		{
+			document.write("<br />");
+		}
+		i++;
+		
+	}
+	i=1;
+	document.write("<br />"+"<br />"+"(3) do-while 문으로 이름나타내기"+"<br />"+"<br />");
+	do{
+		document.write(a+"	");
+		if(i%4 == 0)
+		{
+			document.write("<br />");
+		}
+		i++;
+		
+	}while(i<=n);
+	</script>
+
+</BODY>
+</HTML>

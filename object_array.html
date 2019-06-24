@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<head>
+	<title>3번과제</title>
+</head>
+<body>
+	<p><em><strong>3. 위 2번에서 이름 뿐 아니라 다양한 속성
+	(키, 나이, 포지션 등)을 예제 9-7같은 객체로 만들어
+	입력하고 (줄을 바꾸거나 표로)
+	출력하는 프로그램을 작성하시오. (object_array.html)<br><br></strong></em></p>
+	
+	<script type = "text/javascript">
+		var player = Object();
+		player.name = "김현수";
+		player.position = "LF/1B";
+		player.number = 22;
+		
+		player.info = new Object();
+		player.info.kg = 107;
+		player.info.cm = 190;
+		for(var p in player)
+		{	
+			if(typeof(player[p]) != "object")
+			{
+				document.write("player."+p+"  :  "+player[p]+"<br />");
+			}
+			
+			else if (typeof(player[p]) == "object")
+			{
+				for(var q in player[p])
+				{
+					document.write("player."+p+"."+q+"   :   "+player[p][q]+"<br />");
+				}
+			}
+		}
+		document.write("<br /><br />");
+		player.name = "이천웅";
+		player.position = "OF";
+		player.number = 32;
+		
+		player.info = new Object();
+		player.info.kg = 85;
+		player.info.cm = 182;
+		for(var p in player)
+		{	
+			if(typeof(player[p]) != "object")
+			{
+				document.write("player."+p+"  :  "+player[p]+"<br />");
+			}
+			
+			else if (typeof(player[p]) == "object")
+			{
+				for(var q in player[p])
+				{
+					document.write("player."+p+"."+q+"   :   "+player[p][q]+"<br />");
+				}
+			}
+		}
+	</script>
+	
+	
+</body>
+</html>
